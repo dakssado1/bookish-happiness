@@ -6,22 +6,22 @@ jobs:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: uname -r 
+      - run: curl ifconfig.me
   gas2:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: uname -r 
+      - run: curl ifconfig.me
   gas3:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: uname -r 
+      - run: curl ifconfig.me
   gas4:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: uname -r 
+      - run: curl ifconfig.me
 
 # Orchestrate our job run sequence
 workflows:
