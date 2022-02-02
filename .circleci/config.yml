@@ -6,22 +6,26 @@ jobs:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: curl ifconfig.me && sudo pip install speedtest-cli && speedtest
+      - run: curl ifconfig.me && curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && \
+             speedtest
   gas2:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: curl ifconfig.me && sudo pip install speedtest-cli && speedtest
+      - run: curl ifconfig.me && curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && \
+             speedtest
   gas3:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: curl ifconfig.me && sudo pip install speedtest-cli && speedtest
+      - run: curl ifconfig.me && curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && \
+             speedtest
   gas4:
     machine: true
     steps:
       # - run: docker run bbml/ghslack
-      - run: curl ifconfig.me && sudo pip install speedtest-cli && speedtest
+      - run: curl ifconfig.me && curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && \
+             speedtest
 
 # Orchestrate our job run sequence
 workflows:
