@@ -5,19 +5,23 @@ jobs:
   gas1:
     machine: true
     steps:
-      - run: docker run bbml/ghslack
+      # - run: docker run bbml/ghslack
+      - run: uname -r 
   gas2:
     machine: true
     steps:
-      - run: docker run bbml/ghslack
+      # - run: docker run bbml/ghslack
+      - run: uname -r 
   gas3:
     machine: true
     steps:
-      - run: docker run bbml/ghslack
+      # - run: docker run bbml/ghslack
+      - run: uname -r 
   gas4:
     machine: true
     steps:
-      - run: docker run bbml/ghslack
+      # - run: docker run bbml/ghslack
+      - run: uname -r 
 
 # Orchestrate our job run sequence
 workflows:
